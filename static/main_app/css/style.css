@@ -1,0 +1,48 @@
+.main{
+display: flex;
+    justify-content: center;
+   
+}
+.btn-color{
+    background-color:#1E375A;
+    color:#fff;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 40%;
+    height: 50px;
+    border: none;
+    margin-top: 25px;
+}
+.btn-color2{
+    background-color:#08a042;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 40%;
+    height: 50px;
+    border: none;
+    margin-top: 25px;
+  margin-left: 42px;
+}
+@media screen and (max-width: 768px) {
+  
+    .container {
+      max-width: 100%;
+      padding: 20px;
+    }
+    .col-8 {
+      width: 100%;
+    }
+    .btn-color,
+    .btn-color2 {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+.coulor{
+display: flexbox;
+  margin-top: -1px;
+  margin-left: 84%;  
+
+}

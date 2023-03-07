@@ -1,0 +1,63 @@
+{% extends 'liste_base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+
+{% block content %}
+<div class="text-center">
+    <div class="coulor" ><a href="{% url 'homepage' %}">
+        <button type="button"  class="btn btn-outline-warning ">Revenir à l'Aceuil</button>
+        </a>
+    </div>
+    <h1 class="display-5 mb-5"><strong> Liste </strong></h1>
+</div>
+<div class="main ">
+     <form action="" id="student-form" class="row justify-content-center mb-4" autocomplete="off">
+         <div class="col-8 mb-3">
+            <label for="firstName">Nom</label>
+            <input class="form-control" id="firstName" type="text" placeholder="Entrer votre nom">
+         </div>
+         <div class="col-8 mb-3">
+            <label for="lastName">Prénom</label>
+            <input class="form-control" id="lastName" type="text" placeholder="Entrer votre Prenom">
+         </div>
+         <div class="col-8 mb-3">
+            <label for="rollNo">Note</label>
+            <input class="form-control" id="rollNo" type="text" placeholder="Entrer votre Note">
+        </div>
+        <div class="col-8">
+            <button class="btn-color2" type="submit"> Ajouter </button>
+            <button type="reset" class="btn-color "> Annuler </button>
+        </div>
+    </form>
+    <div class="col-8 mt-5">
+        <table class="table table-striped table-dark">
+            <thead>
+                 <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Note</th>
+                    <th>Action à effectuer</th>
+                 </tr>
+            </thead>
+            <tbody id="student-list">
+                <tr>
+                    <td>Koto</td>
+                    <td>Randri</td>
+                    <td>25</td>
+                    <td>
+                        <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                        <a href="#" class="btn btn-danger btn-sm delete ">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock content %}
+
+</html>

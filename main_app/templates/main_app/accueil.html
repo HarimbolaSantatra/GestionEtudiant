@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Responsive Sidebar</title>
+  <!-- Link Styles -->
+  <link rel="stylesheet" href="{% static 'main_app/css/accueil.css' %}">
+  <link rel="stylesheet" href="{% static 'main_app/css/boxicons.min.css' %}">
+  <!-- CDN boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo_details">
+      <i class="bx bxl-audible icon"></i>
+      <div class="logo_name"> Gestion Etudiant </div>
+      <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <i class="bx bx-search"></i>
+        <input type="text" placeholder="Rechercher...">
+         <span class="tooltip">Rechercher</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-grid-alt"></i>
+          <span class="link_name">Accueil</span>
+        </a>
+        <span class="tooltip">Aceuil</span>
+      </li>
+      <li>
+        <a href="{% url 'student' %}">
+          <i class="bx bx-user"></i>
+          <span class="link_name">Etudiant</span>
+        </a>
+        <span class="tooltip">Etudiant</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-user"></i>
+          <span class="link_name">Filière</span>
+        </a>
+        <span class="tooltip">Filière</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-user"></i>
+          <span class="link_name">Matière</span>
+        </a>
+        <span class="tooltip">Matière</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-user"></i>
+          <span class="link_name">Professeur</span>
+        </a>
+        <span class="tooltip">Professeur</span>
+      </li>
+      <li>
+        <a href="{% url 'student_detail' %}">
+          <i class="bx bx-pie-chart-alt-2"></i>
+          <span class="link_name">Détail</span>
+        </a>
+        <span class="tooltip">Détail</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-folder"></i>
+          <span class="link_name">Rendu Pdf</span>
+        </a>
+        <span class="tooltip">Rendu Pdf</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bx-cog"></i>
+          <span class="link_name">Paramètre</span>
+        </a>
+        <span class="tooltip">Paramètre</span>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <header>
+      <h2>Gestion Etudiant</h2>
+      <ul>
+        <li><a href="#"></a></li>
+          <li><a href="{% url 'homepage' %}">Accueil</a></li>
+          <li><a href="#">Gerer les Notes</a></li>
+          <li><a href="#">Gerer la Moyenne</a></li>
+      </ul>
+       <a href="#" class="action-btn">Rendu pdf</a>
+    </header>
+    <section class="hero">
+        <div class="span-6 describe">
+          <h1>Gerer Votre Note Plus Efficacement</h1>
+          <div class="button1"><button> Commençer </button></div>
+        </div>
+        <div class="span-6 image">
+             <div class="slanted">
+                 <div class="slanted-bg"></div>
+             </div>
+        </div>
+    </section>
+  </section>
+  <!-- Scripts -->
+  <script src="{% static 'main_app/js/accueil.js' %}"></script>
+  <script src="{% static 'main_app/fontawesome/fontawesome.min.js' %}"></script>
+</body>
+</html>

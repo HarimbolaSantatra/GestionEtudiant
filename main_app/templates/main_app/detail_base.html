@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gestion des notes des étudiants</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Liens vers les fichiers Bootstrap -->
+    <link rel="stylesheet" href="{% static 'main_app/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main_app/css/liste.css' %}">
+</head>
+
+
+<div class="coulor" ><a href="{% url 'homepage' %}">
+        <button type="button" class="btn btn-outline-warning "> Revenir à l'acueil </button>
+</a></div>
+<h1> Informations </h1>
+<form id="grades-form">
+{% block content %}
+
+{% endblock content %}
+</form>
+
+{% block script %}
+<script src="{% static 'main_app/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'main_app/js/jquery.min.js' %}"></script>
+<script src="{% static 'main_app/js/liste.js' %}"></script>
+{% endblock script %}

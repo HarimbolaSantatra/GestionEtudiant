@@ -1,0 +1,39 @@
+body {
+    background-color: #1d2630;
+    color: white;
+}
+.form-group{
+    margin-left: 30%;
+    width: 40%;
+    height: 50%;
+}
+.form-control{
+    margin-top: 12px;
+}
+.style1{
+    margin-top: 12px;
+    margin-left: 30%;  
+}
+.style3{
+    margin-top: 12px;
+    margin-left: 30%;
+}
+.style2{
+    margin-top: 12px;
+}
+#result{
+    margin-left: 30%;
+    font-size: 25px;
+}
+h1{
+   text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.coulor{
+    display: flexbox;
+      margin-top: 20px;
+      margin-left: 84%;  
+    
+    }
+    

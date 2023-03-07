@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Système de présence{% endblock %}</title>
+    <link rel="stylesheet"  href="{% static 'main_app/css/style.css' %}">
+    <link rel="stylesheet"  href="{% static 'main_app/css/query.css' %}">
+    <link rel="stylesheet" href="{% static 'main_app/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main_app/css/liste.css' %}">
+    <link rel="stylesheet" href="main_app/fontawesome/font-awesome.min.css">
+</head>
+
+<body style="color: white; background-color: #1d2630; " >
+    <div id="sidebar-container"></div>
+    <div class="container mt-5">
+        {% block content %}
+
+        {% endblock content %}
+    </div>
+</body>
+
+
+{% block script %}
+<script src="{% static 'main_app/js/script.js' %}"></script>
+{% endblock script %}
